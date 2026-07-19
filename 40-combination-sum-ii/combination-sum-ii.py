@@ -5,8 +5,7 @@ class Solution:
 
         def dfs(i,total,array):
             if total==target:
-                if list(array[:]) not in final:
-                    final.append(list(array[:]))
+                final.append(list(array[:]))
                 return
             
             if target<total or len(candidates)<=i:
